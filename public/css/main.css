@@ -1,0 +1,97 @@
+body {
+  background-color: black;
+  color: white;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto Mono', Arial;
+  font-weight: 600;
+  font-size: 4em;
+  color: #89F442;
+}
+
+h2 {
+  font-family: 'Roboto Mono', Arial;
+  font-weight: 600;
+  font-size: 2em;
+  color: #89F442;
+}
+
+.planets-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: stretch;
+  position: fixed;
+  width: 100vw;
+  background-color: #89F442;
+  color: black;
+  bottom: 0px;
+  z-index: 5;
+
+}
+
+a {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  background-color: black;
+  color: #89F442;
+  transition: 0.3s;
+}
+
+.intro-title {
+  text-align: center;
+  padding-top: 20vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+a, li {
+  font-family: 'Roboto Mono', Arial;
+  font-weight: 400;
+  font-size: 1.2em;
+  z-index: 10;
+}
+
+.planet-details {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.planet {
+  width: 100vw;
+  height: 80vh;
+  object-fit: contain;
+  position: absolute;
+  z-index: 0;
+  left: 40vh;
+  display: block;
+}
+
+img {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+section {
+  padding-left: 2em;
+  padding-top: 2em;
+
+}
+
+li {
+  list-style: none;
+}
